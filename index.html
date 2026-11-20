@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Growth Jar Experience | A 52-week gratitude journal and memory jar</title>
+<meta name="description" content="52 weeks. One journal. One jar. A year worth remembering. Pre-order The Growth Jar Experience, launching 11 December 2026.">
+<meta property="og:title" content="The Growth Jar Experience">
+<meta property="og:description" content="Don’t just count your blessings. Document your becoming.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🫙%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F3B38;--ink2:#0A2A28;--paper:#F3F7F5;--white:#fff;--text:#1B2B29;--muted:#51655F;--gold:#F2B632;--coral:#E8604C;--sky:#8CC5E3;--lilac:#B9A4E6;--line:#D5E0DB;--serif:"Young Serif",Georgia,serif;--sans:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;background:var(--ink);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.65;font-size:18px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.narrow{max-width:680px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15}
+h1{font-size:clamp(2.4rem,6vw,4.1rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:20px}
+h3{font-size:1.25rem;margin-bottom:8px}
+p+p{margin-top:16px}
+section{padding:88px 0}
+.btn{display:inline-block;background:var(--gold);color:var(--ink2);font-weight:600;text-decoration:none;padding:16px 30px;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{background:#ffc94d;transform:translateY(-2px)}
+.btn.dark{background:var(--ink);color:#fff}.btn.dark:hover{background:var(--ink2)}
+.ph{background:rgba(242,182,50,.28);border-radius:4px;padding:0 4px;font-weight:600}
+.dark-bg .ph{background:rgba(242,182,50,.25);color:#FFE29A}
+/* header */
+header{background:var(--ink);color:#fff}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-family:var(--serif);font-size:1.15rem;text-decoration:none}
+.bar .btn{padding:10px 20px;font-size:.95rem}
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:24px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero .sub{font-size:1.2rem;color:#CFE3DD;margin:24px 0 8px;max-width:30em}
+.hero .fine{font-size:.95rem;color:#9FBDB5;margin-top:20px;max-width:32em}
+.hero .btn{margin-top:28px}
+.jar{width:100%;max-width:340px;justify-self:center}
+.jar .s{opacity:0;animation:drop .9s cubic-bezier(.3,.9,.3,1) forwards;animation-delay:var(--d)}
+@keyframes drop{from{opacity:0;transform:translateY(-230px)}to{opacity:1;transform:none}}
+/* memory */
+.memory{background:var(--paper)}
+.memory .q p{font-family:var(--serif);font-size:1.35rem;line-height:1.5;color:var(--ink)}
+.memory .q p+p{margin-top:8px}
+.memory .rest{margin-top:36px;color:var(--muted)}
+.meet{background:var(--white)}
+.opening{margin-top:28px;border-left:4px solid var(--gold);padding-left:24px}
+.opening p+p{margin-top:12px}
+/* how */
+.how ol{list-style:none;padding:0;margin-top:36px;display:grid;gap:0}
+.how li{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.how li:last-child{border-bottom:1px solid var(--line)}
+.how .n{font-family:var(--serif);font-size:2rem;color:var(--coral);line-height:1}
+.how li p{color:var(--muted)}
+.tag{margin-top:28px;font-family:var(--serif);font-size:1.3rem;color:var(--ink)}
+/* inside */
+.inside{background:var(--ink);color:#fff}
+.inside h2,.inside h3{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:36px}
+.specs{list-style:none;padding:0}
+.specs li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.18);color:#D6E7E2}
+.specs b{color:#fff;font-weight:600}
+.themes{list-style:none;padding:0}
+.themes li{padding:10px 0 10px 22px;position:relative;color:#D6E7E2}
+.themes li::before{content:"";position:absolute;left:0;top:19px;width:10px;height:10px;border-radius:50%;background:var(--c)}
+.themes b{color:#fff;font-weight:600}
+.slips{margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.slip{background:var(--c);color:var(--ink2);padding:22px 20px;border-radius:4px;font-weight:500;line-height:1.45;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.slip:nth-child(odd){transform:rotate(-1.6deg)}.slip:nth-child(even){transform:rotate(1.4deg)}
+.slips-note{margin-top:20px;font-size:.9rem;color:#9FBDB5}
+/* packages */
+.pk{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;margin-top:36px}
+.card{background:var(--white);border:2px solid var(--line);border-radius:18px;padding:32px}
+.card.best{border-color:var(--ink)}
+.card ul{list-style:none;padding:0;margin:18px 0 24px}
+.card li{padding:8px 0 8px 28px;position:relative}
+.card li::before{content:"✓";position:absolute;left:0;color:var(--ink);font-weight:700}
+.card li.no{color:#8A9A95;text-decoration:line-through}
+.card li.no::before{content:"–";color:#8A9A95}
+.price{font-family:var(--serif);font-size:2rem;color:var(--ink)}
+.note{color:var(--muted);font-size:.95rem;margin-top:20px}
+/* story */
+.story{background:var(--white)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.box{border:2px dashed var(--line);border-radius:14px;padding:24px;color:var(--muted);font-size:.98rem}
+/* gift + ordinary */
+.gift .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.for{list-style:none;padding:0;margin:20px 0 28px}
+.for li{padding:6px 0;font-family:var(--serif);font-size:1.15rem;color:var(--ink)}
+/* faq */
+.faq details{border-top:1px solid var(--line);padding:20px 0}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--coral);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:12px;color:var(--muted)}
+/* final */
+.final{background:var(--ink);color:#fff;text-align:left}
+.final h2{color:#fff;max-width:16em}
+.final p{color:#CFE3DD}
+.final .tag{color:var(--gold);margin-top:32px}
+footer{background:var(--ink2);color:#8FB0A7;padding:28px 0;font-size:.92rem}
+.stick{display:none}
+body{overflow-x:clip}
+@media(max-width:820px){
+ section{padding:56px 0}
+ .wrap{padding:0 20px}
+ .hero .wrap,.two,.gift .wrap{grid-template-columns:1fr;gap:28px}
+ .hero{padding-bottom:64px}
+ .jar{max-width:210px}
+ body{font-size:17px;line-height:1.6}
+ h1{font-size:2.15rem}
+ h2{font-size:1.75rem}
+ .hero .sub{font-size:1.08rem;margin-top:18px}
+ .hero .btn,.card .btn,.gift .btn,.final .btn{display:block;text-align:center;width:100%}
+ .btn{padding:16px 24px;min-height:52px}
+ .bar .btn{display:inline-block;width:auto;min-height:0;padding:10px 18px}
+ .memory .q p{font-size:1.2rem}
+ .opening{padding-left:16px}
+ .how li{grid-template-columns:40px 1fr;gap:12px}
+ .how .n{font-size:1.6rem}
+ .grid{gap:32px}
+ .slips{grid-template-columns:1fr 1fr;gap:12px}
+ .slip{padding:16px 14px;font-size:.95rem}
+ .card{padding:24px}
+ .faq summary{padding:4px 0;min-height:44px;align-items:center}
+ .final h2{max-width:none}
+ footer{padding-bottom:96px}
+ .stick{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--ink);color:#fff;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 20px rgba(0,0,0,.25);transform:translateY(110%);visibility:hidden;transition:transform .25s,visibility .25s}
+ .stick.on{transform:none;visibility:visible}
+ .stick span{font-size:.95rem;line-height:1.3}
+ .stick .btn{width:auto;min-height:0;padding:12px 22px;display:inline-block}
+}
+@media(max-width:380px){
+ h1{font-size:1.9rem}
+ .slips{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .jar .s{animation:none;opacity:1}
+ .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="dark-bg">
+ <div class="wrap bar">
+  <a class="logo" href="#top">The Growth Jar</a>
+  <a class="btn" href="#order">Pre-order</a>
+ </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero dark-bg" style="padding-top:40px">
+ <div class="wrap">
+  <div>
+   <h1>Don’t just count your blessings. Document your becoming.</h1>
+   <p class="sub"><b>52 weeks. One journal. One jar.</b> A guided weekly gratitude journal with tear-out slips, and a jar to keep them in. Start on January 1. Open it on the last day of the year.</p>
+   <a class="btn" href="#order">Pre-order now, from <span class="ph">[price]</span></a>
+   <p class="fine">Launching 11 December 2026. Pre-order by <span class="ph">[date]</span> to get <span class="ph">[founding-buyer offer]</span> and have it before Christmas.</p>
+  </div>
+  <svg class="jar" viewBox="0 0 300 390" role="img" aria-label="A glass jar filling with folded reflection slips">
+   <rect x="40" y="92" width="220" height="276" rx="44" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.6)" stroke-width="3"/>
+   <rect x="70" y="62" width="160" height="34" rx="8" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.6)" stroke-width="3"/>
+   <rect x="58" y="32" width="184" height="34" rx="8" fill="#F2B632"/>
+   <g>
+    <g class="s" style="--d:.2s"><rect x="62" y="318" width="70" height="38" rx="3" fill="#8CC5E3" transform="rotate(-8 97 337)"/></g>
+    <g class="s" style="--d:.45s"><rect x="140" y="322" width="70" height="38" rx="3" fill="#E8604C" transform="rotate(6 175 341)"/></g>
+    <g class="s" style="--d:.7s"><rect x="96" y="290" width="70" height="38" rx="3" fill="#F2B632" transform="rotate(-3 131 309)"/></g>
+    <g class="s" style="--d:.95s"><rect x="164" y="288" width="70" height="38" rx="3" fill="#B9A4E6" transform="rotate(10 199 307)"/></g>
+    <g class="s" style="--d:1.2s"><rect x="58" y="280" width="70" height="38" rx="3" fill="#E8604C" transform="rotate(7 93 299)"/></g>
+    <g class="s" style="--d:1.45s"><rect x="110" y="256" width="70" height="38" rx="3" fill="#8CC5E3" transform="rotate(-10 145 275)"/></g>
+    <g class="s" style="--d:1.7s"><rect x="150" y="252" width="70" height="38" rx="3" fill="#F2B632" transform="rotate(5 185 271)"/></g>
+   </g>
+   <path d="M62 150 q0 -30 14 -40" stroke="rgba(255,255,255,.45)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </svg>
+ </div>
+</section>
+
+<!-- MEMORY -->
+<section class="memory">
+ <div class="wrap narrow">
+  <h2>Think about the person you were a year ago.</h2>
+  <div class="q">
+   <p>The things that kept you up at night.</p>
+   <p>The prayers and worries you carried quietly.</p>
+   <p>The things that made you so happy.</p>
+   <p>The things you never saw coming.</p>
+  </div>
+  <div class="rest">
+   <p>How much of it can you still remember? All? Some? Or none at all?</p>
+   <p>We live through hundreds of little moments every year. Yet somewhere between chasing big goals and handling everyday life, we forget so much of what made it meaningful.</p>
+   <p>Not on your phone, where it can be lost or wiped. Not in your memory, where it quietly fades. But in a jar you can see every day and reach into whenever you want to remember.</p>
+  </div>
+ </div>
+</section>
+
+<section class="meet">
+ <div class="wrap narrow">
+  <h2>What if you could meet yourself from 52 weeks ago?</h2>
+  <p>Imagine opening a jar full of small folded notes.</p>
+  <div class="opening">
+   <p>You pick one. It’s about something that once kept you awake at night, and you smile, because it no longer worries you.</p>
+   <p>You open another. It’s a small win you had completely forgotten.</p>
+   <p>Another reminds you of someone who showed up for you when you needed them most.</p>
+  </div>
+  <p style="margin-top:28px">Suddenly you’re not just reading old notes. You’re seeing your life through the eyes of the person you used to be: the things you hoped for, the moments you survived, the lessons you learned, and who you became along the way.</p>
+ </div>
+</section>
+
+<!-- HOW -->
+<section class="how">
+ <div class="wrap narrow">
+  <h2>More than a gratitude journal. An experience you can hold.</h2>
+  <p>Most journals give you a place to write. This one gives you a reason to return to what you’ve written.</p>
+  <ol>
+   <li><span class="n">1</span><div><h3>Reflect</h3><p>Pause once a week and notice the moments, people and feelings that shaped your days.</p></div></li>
+   <li><span class="n">2</span><div><h3>Write</h3><p>Use the guided prompts to capture gratitude, small wins, memories, worries and affirmations.</p></div></li>
+   <li><span class="n">3</span><div><h3>Tear</h3><p>Carefully tear out your reflection slip. A little piece of your story, now in your hands.</p></div></li>
+   <li><span class="n">4</span><div><h3>Save</h3><p>Fold it and drop it in your jar. Watch your collection grow, one week at a time.</p></div></li>
+   <li><span class="n">5</span><div><h3>Revisit</h3><p>After 52 weeks, open your jar, read your words, and see how much has changed.</p></div></li>
+  </ol>
+  <p class="tag">Write it. Tear it. Save it. One week at a time.</p>
+ </div>
+</section>
+
+<!-- INSIDE -->
+<section class="inside dark-bg">
+ <div class="wrap">
+  <h2>See what’s inside</h2>
+  <p style="color:#D6E7E2;max-width:36em">52 weeks of guided prompts, a closing section to look back on your year, and no pressure to write perfectly. You don’t need an extraordinary week. Just an invitation to notice the life you’re already living.</p>
+  <div class="grid">
+   <div>
+    <h3>The details</h3>
+    <ul class="specs">
+     <li><b>Pages:</b> <span class="ph">[number]</span> pages, <span class="ph">[size]</span>, <span class="ph">[paper type]</span></li>
+     <li><b>Tear-out slips:</b> 52, sized to fit the jar</li>
+     <li><b>The jar:</b> <span class="ph">[size, material, lid]</span></li>
+     <li><b>End-of-year reflection:</b> a closing section to look back on your journey</li>
+    </ul>
+    <div class="box" style="margin-top:24px;border-color:rgba(255,255,255,.3);color:#B5CEC7">Add product photos here: the cover, an open page with a tear-out slip, and the jar with folded slips.</div>
+   </div>
+   <div>
+    <h3>Six themes, all year</h3>
+    <ul class="themes">
+     <li style="--c:var(--gold)"><b>Your gratitude.</b> What you’re thankful for, and why it matters.</li>
+     <li style="--c:var(--sky)"><b>Your people.</b> The kindness and joy around you.</li>
+     <li style="--c:var(--lilac)"><b>Your memories.</b> The experiences you never want to forget.</li>
+     <li style="--c:var(--coral)"><b>Your difficult moments.</b> The worries and lessons you’re working through.</li>
+     <li style="--c:var(--gold)"><b>Your becoming.</b> The small victories you might otherwise overlook.</li>
+     <li style="--c:var(--sky)"><b>Your affirmations.</b> The words to carry into another week.</li>
+    </ul>
+   </div>
+  </div>
+  <div class="slips">
+   <div class="slip" style="--c:var(--gold)">Who made your week easier, and what did they do?</div>
+   <div class="slip" style="--c:var(--sky)">What are you worried about that you’d love to read about again in a year?</div>
+   <div class="slip" style="--c:var(--lilac)">What small win are you tempted to ignore this week?</div>
+   <div class="slip" style="--c:var(--coral)">Which moment from this week would you relive if you could?</div>
+  </div>
+  <p class="slips-note">Sample prompts. <span class="ph">[Replace with your real prompts.]</span></p>
+ </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="order">
+ <div class="wrap">
+  <h2>Choose your Growth Jar</h2>
+  <p>Founding pre-order pricing ends <span class="ph">[date]</span>.</p>
+  <div class="pk">
+   <div class="card">
+    <h3>Journal only</h3>
+    <div class="price"><span class="ph">[price]</span></div>
+    <ul>
+     <li>52-week guided journal with tear-out slips</li>
+     <li>End-of-year reflection section</li>
+     <li class="no">The Growth Jar</li>
+    </ul>
+    <a class="btn dark" href="#" data-package="journal">Pre-order journal</a>
+   </div>
+   <div class="card best">
+    <h3>The complete experience</h3>
+    <div class="price"><span class="ph">[price]</span></div>
+    <ul>
+     <li>52-week guided journal with tear-out slips</li>
+     <li>End-of-year reflection section</li>
+     <li>The Growth Jar</li>
+     <li><span class="ph">[Bonus item]</span></li>
+    </ul>
+    <a class="btn" href="#" data-package="complete">Pre-order the experience</a>
+   </div>
+  </div>
+  <p class="note">Shipping: <span class="ph">[locations, timeline, cost]</span>. Order by <span class="ph">[date]</span> for delivery before Christmas. Refunds: <span class="ph">[policy]</span>.</p>
+ </div>
+</section>
+
+<!-- ORDINARY WEEKS -->
+<section class="story">
+ <div class="wrap two">
+  <div>
+   <h2>Not every week will be exciting. That’s the point.</h2>
+   <p>Some weeks will be ordinary. Some will be difficult. Some will leave you with more questions than answers.</p>
+   <p>Imagine reading about them a year later. The worry that became smaller. The hard decision that changed your direction. The kindness you almost forgot. The little win that turned out to be the beginning of something bigger.</p>
+   <p>Sometimes you don’t realise how much a moment mattered until you look back. That’s why we’re saving them.</p>
+  </div>
+  <div>
+   <h2>Why I created it</h2>
+   <div class="box"><span class="ph">[Add 3 to 5 sentences in your own voice about what inspired The Growth Jar and what you hope it gives people.]</span></div>
+   <h3 style="margin-top:28px">What early readers say</h3>
+   <div class="box"><span class="ph">[Add 2 to 3 testimonials with first names.]</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- GIFT -->
+<section class="gift">
+ <div class="wrap">
+  <div>
+   <h2>A gift worth giving</h2>
+   <p>A year from now, your life may look completely different. Or some things may still be the same. Either way, you’ll have 52 little reminders of the year you lived, in your own handwriting, saved by your own hands.</p>
+  </div>
+  <div>
+   <ul class="for">
+    <li>For yourself.</li>
+    <li>For someone you love.</li>
+    <li>For the person you’ll be 52 weeks from now.</li>
+   </ul>
+   <p>Order by <span class="ph">[date]</span> and it can be under the tree before Christmas, ready to start on January 1.</p>
+   <p><a class="btn dark" href="#order" style="margin-top:20px">Choose your package</a></p>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" style="background:var(--white)">
+ <div class="wrap narrow">
+  <h2>Frequently asked questions</h2>
+  <details><summary>Do I need to write every day?</summary><p>No. It’s a weekly experience designed to fit into your life. Set aside a few quiet minutes once a week.</p></details>
+  <details><summary>How is this different from a regular journal?</summary><p>You don’t just write and move on. Each week you tear out a reflection slip and keep it in a jar, so after 52 weeks you have a collection of memories to revisit.</p></details>
+  <details><summary>What if I have a difficult week?</summary><p>Write about that too. Gratitude doesn’t mean pretending everything is perfect. There’s room for your worries, emotions and lessons.</p></details>
+  <details><summary>Does it come with a jar?</summary><p>The complete experience includes the jar. The journal-only option doesn’t, so you can use a jar you already own. <span class="ph">[Confirm.]</span></p></details>
+  <details><summary>When should I start?</summary><p>Any week you like, but January 1 is a natural start. Your jar will be full by the end of the year.</p></details>
+  <details><summary>What happens after 52 weeks?</summary><p>You open your jar, read your saved reflections, and use the final section of the journal to look back on your year.</p></details>
+  <details><summary>Can I gift it?</summary><p>Absolutely. Order by <span class="ph">[date]</span> for Christmas delivery.</p></details>
+  <details><summary>Where do you ship, and how long does it take?</summary><p><span class="ph">[Add shipping locations, timelines and costs.]</span></p></details>
+ </div>
+</section>
+
+<!-- FINAL -->
+<section class="final dark-bg">
+ <div class="wrap">
+  <h2>One day, these ordinary moments will become memories.</h2>
+  <p>Give yourself a way to find them again.</p>
+  <p style="margin-top:28px"><a class="btn" href="#order">Pre-order your Growth Jar Experience</a></p>
+  <p class="tag">Don’t just count your blessings. Document your becoming.</p>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">© 2026 The Growth Jar Experience. <span class="ph">[Contact email or Instagram handle]</span></div>
+</footer>
+
+<div class="stick dark-bg" id="stick"><span>Launches 11 December<br><b class="ph">[price]</b></span><a class="btn" href="#order">Pre-order</a></div>
+
+<script>
+/* Set your real checkout links here (Paystack, Flutterwave, Selar, Shopify, WhatsApp, etc.) */
+var LINKS={journal:"#order",complete:"#order"};
+document.querySelectorAll("[data-package]").forEach(function(a){a.href=LINKS[a.dataset.package]||"#order"});
+/* Mobile sticky pre-order bar: shows after the hero, hides while the packages are on screen */
+var st=document.getElementById("stick"),vis={h:true,o:false};
+function up(){st.classList.toggle("on",!vis.h&&!vis.o)}
+if("IntersectionObserver" in window){
+ new IntersectionObserver(function(e){vis.h=e[0].isIntersecting;up()}).observe(document.querySelector(".hero"));
+ new IntersectionObserver(function(e){vis.o=e[0].isIntersecting;up()}).observe(document.getElementById("order"));
+}
+</script>
+</body>
+</html>
